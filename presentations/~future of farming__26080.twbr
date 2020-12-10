@@ -1,0 +1,2323 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1018.2303                               -->
+<workbook source-build='2020.3.2 (20203.20.1018.2303)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <CascadingFilters />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='agcensus_2017' inline='true' name='federated.1ddt75f1cltyb31ek2ykw0u4q6v2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='agcensus_2017' name='excel-direct.0iyjeeq0ocac6c1gugs851tjway2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/katie/Desktop/data_projects/Future-of-Farming/data/agriculture census/combined/T2/t2_agcensus_2017.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='agcensus_2012' name='excel-direct.18jg2h90l97a8411jx07d0j01ytg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/katie/Desktop/data_projects/Future-of-Farming/data/agriculture census/combined/T2/t2_agcensus_2012.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0iyjeeq0ocac6c1gugs851tjway2' name='agcensus_2017' table='[agcensus_2017$]' type='table'>
+          <columns gridOrigin='A1:K7081:no:A1:K7081:0' header='yes' outcome='2'>
+            <column datatype='date' date-parse-format='yyyy' name='year' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='integer' name='state fips' ordinal='2' />
+            <column datatype='string' name='county' ordinal='3' />
+            <column datatype='string' name='abbreviation' ordinal='4' />
+            <column datatype='integer' name='county code' ordinal='5' />
+            <column datatype='string' name='commodity' ordinal='6' />
+            <column datatype='string' name='data item' ordinal='7' />
+            <column datatype='string' name='domain category' ordinal='8' />
+            <column datatype='integer' name='value' ordinal='9' />
+            <column datatype='integer' name='rounded value' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0iyjeeq0ocac6c1gugs851tjway2' name='agcensus_2017' table='[agcensus_2017$]' type='table'>
+          <columns gridOrigin='A1:K7081:no:A1:K7081:0' header='yes' outcome='2'>
+            <column datatype='date' date-parse-format='yyyy' name='year' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='integer' name='state fips' ordinal='2' />
+            <column datatype='string' name='county' ordinal='3' />
+            <column datatype='string' name='abbreviation' ordinal='4' />
+            <column datatype='integer' name='county code' ordinal='5' />
+            <column datatype='string' name='commodity' ordinal='6' />
+            <column datatype='string' name='data item' ordinal='7' />
+            <column datatype='string' name='domain category' ordinal='8' />
+            <column datatype='integer' name='value' ordinal='9' />
+            <column datatype='integer' name='rounded value' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>7</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K7081:no:A1:K7081:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2017_965B203F8F674AEC813EF40EF253014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2017_965B203F8F674AEC813EF40EF253014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state fips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state fips]</local-name>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias>state fips</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2017_965B203F8F674AEC813EF40EF253014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2017_965B203F8F674AEC813EF40EF253014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>abbreviation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[abbreviation]</local-name>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias>abbreviation</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2017_965B203F8F674AEC813EF40EF253014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[county code]</local-name>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias>county code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2017_965B203F8F674AEC813EF40EF253014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commodity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[commodity]</local-name>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias>commodity</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2017_965B203F8F674AEC813EF40EF253014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data item</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[data item]</local-name>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias>data item</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2017_965B203F8F674AEC813EF40EF253014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domain category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[domain category]</local-name>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias>domain category</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2017_965B203F8F674AEC813EF40EF253014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2017_965B203F8F674AEC813EF40EF253014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rounded value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rounded value]</local-name>
+            <parent-name>[agcensus_2017]</parent-name>
+            <remote-alias>rounded value</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2017_965B203F8F674AEC813EF40EF253014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='agcensus_2017' datatype='table' name='[__tableau_internal_object_id__].[agcensus!2017_965B203F8F674AEC813EF40EF253014F]' role='measure' type='quantitative' />
+      <column caption='Abbreviation' datatype='string' name='[abbreviation]' role='dimension' type='nominal' />
+      <column caption='Commodity' datatype='string' name='[commodity]' role='dimension' type='nominal' />
+      <column caption='County Code' datatype='integer' name='[county code]' role='dimension' type='ordinal' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Data Item' datatype='string' name='[data item]' role='dimension' type='nominal' />
+      <column caption='Domain Category' datatype='string' name='[domain category]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[rounded value]' role='measure' type='quantitative' />
+      <column caption='State Fips' datatype='integer' name='[state fips]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Value' datatype='integer' name='[value]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='state, county'>
+          <field>[state]</field>
+          <field>[county]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:county:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;ALL&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;ANDERSON&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BLOUNT&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;CAMPBELL&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;CARTER&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;CLAIBORNE&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;COCKE&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GRAINGER&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GREENE&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;HAMBLEN&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;HANCOCK&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;HAWKINS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;JEFFERSON&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;JOHNSON&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;KNOX&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;LOUDON&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;MONROE&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;MORGAN&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;ROANE&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SCOTT&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SEVIER&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SULLIVAN&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;UNICOI&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;UNION&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;WASHINGTON&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BLEDSOE&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BRADLEY&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;CANNON&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;CLAY&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;COFFEE&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;CUMBERLAND&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;DEKALB&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;FENTRESS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;FRANKLIN&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;GRUNDY&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;HAMILTON&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;JACKSON&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MARION&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MCMINN&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MEIGS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;OVERTON&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;PICKETT&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;POLK&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;PUTNAM&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;RHEA&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SEQUATCHIE&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;VAN BUREN&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;WARREN&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;WHITE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BEDFORD&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CHEATHAM&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;DAVIDSON&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;DICKSON&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;GILES&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HICKMAN&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HOUSTON&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HUMPHREYS&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;LAWRENCE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;LEWIS&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;LINCOLN&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MACON&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MARSHALL&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MAURY&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MONTGOMERY&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MOORE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;PERRY&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;ROBERTSON&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;RUTHERFORD&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SMITH&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;STEWART&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SUMNER&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;TROUSDALE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;WAYNE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;WILLIAMSON&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;WILSON&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BENTON&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CARROLL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CHESTER&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CROCKETT&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;DECATUR&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;DYER&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;FAYETTE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;GIBSON&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;HARDEMAN&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;HARDIN&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;HAYWOOD&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;HENDERSON&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;HENRY&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;LAKE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;LAUDERDALE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MADISON&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MCNAIRY&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;OBION&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;SHELBY&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TIPTON&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;WEAKLEY&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='agcensus_2017' id='agcensus!2017_965B203F8F674AEC813EF40EF253014F'>
+            <properties context=''>
+              <relation connection='excel-direct.0iyjeeq0ocac6c1gugs851tjway2' name='agcensus_2017' table='[agcensus_2017$]' type='table'>
+                <columns gridOrigin='A1:K7081:no:A1:K7081:0' header='yes' outcome='2'>
+                  <column datatype='date' date-parse-format='yyyy' name='year' ordinal='0' />
+                  <column datatype='string' name='state' ordinal='1' />
+                  <column datatype='integer' name='state fips' ordinal='2' />
+                  <column datatype='string' name='county' ordinal='3' />
+                  <column datatype='string' name='abbreviation' ordinal='4' />
+                  <column datatype='integer' name='county code' ordinal='5' />
+                  <column datatype='string' name='commodity' ordinal='6' />
+                  <column datatype='string' name='data item' ordinal='7' />
+                  <column datatype='string' name='domain category' ordinal='8' />
+                  <column datatype='integer' name='value' ordinal='9' />
+                  <column datatype='integer' name='rounded value' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (YF&amp;R Questionnaire)' inline='true' name='federated.0rfbx1q0rvsr741759brm0tdt3qb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='YF&amp;R Questionnaire' name='excel-direct.1jl7r7c14pnr621at9zuk1ow0why'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/katie/Desktop/data_projects/Future-of-Farming/data/YF&amp;R Questionnaire.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1jl7r7c14pnr621at9zuk1ow0why' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:AI14:no:A1:AI14:0' header='yes' outcome='2'>
+            <column datatype='string' name='Timestamp' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='integer' name='Age' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='integer' name='RaceCount' ordinal='4' />
+            <column datatype='string' name='Race' ordinal='5' />
+            <column datatype='string' name='Education Level' ordinal='6' />
+            <column datatype='string' name='Marital Status' ordinal='7' />
+            <column datatype='string' name='Does your partner farm also?' ordinal='8' />
+            <column datatype='string' name='Do you have kids?' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='string' name='County' ordinal='11' />
+            <column datatype='string' name='City' ordinal='12' />
+            <column datatype='string' name='Have you always lived in your current state?' ordinal='13' />
+            <column datatype='string' name='If you&apos;ve moved, where from?' ordinal='14' />
+            <column datatype='string' name='How did you find out about YF&amp;R?' ordinal='15' />
+            <column datatype='string' name='YF&amp;R Discovery' ordinal='16' />
+            <column datatype='string' name='Does your county have a YF&amp;R chapter?' ordinal='17' />
+            <column datatype='string' name='How long have you been a YF&amp;R member?' ordinal='18' />
+            <column datatype='string' name='YearsCount' ordinal='19' />
+            <column datatype='string' name='Did you attend FFA or 4H?' ordinal='20' />
+            <column datatype='string' name='How long were you in FFA or 4H?' ordinal='21' />
+            <column datatype='string' name='4H_FFA_Years_Count' ordinal='22' />
+            <column datatype='string' name='What area of the farming industry are you in?' ordinal='23' />
+            <column datatype='string' name='Does your family farm?' ordinal='24' />
+            <column datatype='string' name='If so, how many generations does farming go back in your family?' ordinal='25' />
+            <column datatype='string' name='How long have you or your family been farming?' ordinal='26' />
+            <column datatype='string' name='How did you or your family get started?' ordinal='27' />
+            <column datatype='string' name='Do you or your family rent or own property?' ordinal='28' />
+            <column datatype='string' name='How many acres do you own or rent? (If none, put N/A)' ordinal='29' />
+            <column datatype='integer' name='What is your interest level in farming?' ordinal='30' />
+            <column datatype='string' name='How do you market your goods?' ordinal='31' />
+            <column datatype='string' name='Is farming your main occupation, or do you have another job?' ordinal='32' />
+            <column datatype='string' name='If you have another job, do you work full time or part time?' ordinal='33' />
+            <column datatype='string' name='Do you plan on working and farming, or would you like to be able to make farming a full time job?' ordinal='34' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1jl7r7c14pnr621at9zuk1ow0why' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:AI14:no:A1:AI14:0' header='yes' outcome='2'>
+            <column datatype='string' name='Timestamp' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='integer' name='Age' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='integer' name='RaceCount' ordinal='4' />
+            <column datatype='string' name='Race' ordinal='5' />
+            <column datatype='string' name='Education Level' ordinal='6' />
+            <column datatype='string' name='Marital Status' ordinal='7' />
+            <column datatype='string' name='Does your partner farm also?' ordinal='8' />
+            <column datatype='string' name='Do you have kids?' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='string' name='County' ordinal='11' />
+            <column datatype='string' name='City' ordinal='12' />
+            <column datatype='string' name='Have you always lived in your current state?' ordinal='13' />
+            <column datatype='string' name='If you&apos;ve moved, where from?' ordinal='14' />
+            <column datatype='string' name='How did you find out about YF&amp;R?' ordinal='15' />
+            <column datatype='string' name='YF&amp;R Discovery' ordinal='16' />
+            <column datatype='string' name='Does your county have a YF&amp;R chapter?' ordinal='17' />
+            <column datatype='string' name='How long have you been a YF&amp;R member?' ordinal='18' />
+            <column datatype='string' name='YearsCount' ordinal='19' />
+            <column datatype='string' name='Did you attend FFA or 4H?' ordinal='20' />
+            <column datatype='string' name='How long were you in FFA or 4H?' ordinal='21' />
+            <column datatype='string' name='4H_FFA_Years_Count' ordinal='22' />
+            <column datatype='string' name='What area of the farming industry are you in?' ordinal='23' />
+            <column datatype='string' name='Does your family farm?' ordinal='24' />
+            <column datatype='string' name='If so, how many generations does farming go back in your family?' ordinal='25' />
+            <column datatype='string' name='How long have you or your family been farming?' ordinal='26' />
+            <column datatype='string' name='How did you or your family get started?' ordinal='27' />
+            <column datatype='string' name='Do you or your family rent or own property?' ordinal='28' />
+            <column datatype='string' name='How many acres do you own or rent? (If none, put N/A)' ordinal='29' />
+            <column datatype='integer' name='What is your interest level in farming?' ordinal='30' />
+            <column datatype='string' name='How do you market your goods?' ordinal='31' />
+            <column datatype='string' name='Is farming your main occupation, or do you have another job?' ordinal='32' />
+            <column datatype='string' name='If you have another job, do you work full time or part time?' ordinal='33' />
+            <column datatype='string' name='Do you plan on working and farming, or would you like to be able to make farming a full time job?' ordinal='34' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AI14:no:A1:AI14:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timestamp</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Timestamp]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Timestamp</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RaceCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RaceCount]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>RaceCount</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Race]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education Level</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Education Level]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Education Level</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Marital Status]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Marital Status</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Does your partner farm also?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Does your partner farm also?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Does your partner farm also?</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Do you have kids?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Do you have kids?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Do you have kids?</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Have you always lived in your current state?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Have you always lived in your current state?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Have you always lived in your current state?</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>If you&apos;ve moved, where from?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[If you&apos;ve moved, where from?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>If you&apos;ve moved, where from?</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>How did you find out about YF&amp;R?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[How did you find out about YF&amp;R?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>How did you find out about YF&amp;R?</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YF&amp;R Discovery</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[YF&amp;R Discovery]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>YF&amp;R Discovery</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Does your county have a YF&amp;R chapter?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Does your county have a YF&amp;R chapter?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Does your county have a YF&amp;R chapter?</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>How long have you been a YF&amp;R member?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[How long have you been a YF&amp;R member?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>How long have you been a YF&amp;R member?</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsCount</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[YearsCount]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>YearsCount</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Did you attend FFA or 4H?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Did you attend FFA or 4H?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Did you attend FFA or 4H?</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>How long were you in FFA or 4H?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[How long were you in FFA or 4H?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>How long were you in FFA or 4H?</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>4H_FFA_Years_Count</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[4H_FFA_Years_Count]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>4H_FFA_Years_Count</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>What area of the farming industry are you in?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[What area of the farming industry are you in?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>What area of the farming industry are you in?</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Does your family farm?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Does your family farm?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Does your family farm?</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>If so, how many generations does farming go back in your family?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[If so, how many generations does farming go back in your family?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>If so, how many generations does farming go back in your family?</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>How long have you or your family been farming?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[How long have you or your family been farming?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>How long have you or your family been farming?</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>How did you or your family get started?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[How did you or your family get started?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>How did you or your family get started?</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Do you or your family rent or own property?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Do you or your family rent or own property?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Do you or your family rent or own property?</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>How many acres do you own or rent? (If none, put N/A)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[How many acres do you own or rent? (If none, put N/A)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>How many acres do you own or rent? (If none, put N/A)</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>What is your interest level in farming?</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[What is your interest level in farming?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>What is your interest level in farming?</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>How do you market your goods?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[How do you market your goods?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>How do you market your goods?</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is farming your main occupation, or do you have another job?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Is farming your main occupation, or do you have another job?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Is farming your main occupation, or do you have another job?</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>If you have another job, do you work full time or part time?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[If you have another job, do you work full time or part time?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>If you have another job, do you work full time or part time?</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Do you plan on working and farming, or would you like to be able to make farming a full time job?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Do you plan on working and farming, or would you like to be able to make farming a full time job?]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Do you plan on working and farming, or would you like to be able to make farming a full time job?</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_48074C1DFCD249FB9D998AAE3918663C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[Does your county have a YF&amp;R chapter?]' role='dimension' semantic-role='' type='nominal' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Have you always lived in your current state?]' role='dimension' semantic-role='' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_48074C1DFCD249FB9D998AAE3918663C]' role='measure' type='quantitative' />
+      <column-instance column='[Gender]' derivation='Max' name='[max:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[max:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_48074C1DFCD249FB9D998AAE3918663C'>
+            <properties context=''>
+              <relation connection='excel-direct.1jl7r7c14pnr621at9zuk1ow0why' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:AI14:no:A1:AI14:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Timestamp' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='integer' name='Age' ordinal='2' />
+                  <column datatype='string' name='Gender' ordinal='3' />
+                  <column datatype='integer' name='RaceCount' ordinal='4' />
+                  <column datatype='string' name='Race' ordinal='5' />
+                  <column datatype='string' name='Education Level' ordinal='6' />
+                  <column datatype='string' name='Marital Status' ordinal='7' />
+                  <column datatype='string' name='Does your partner farm also?' ordinal='8' />
+                  <column datatype='string' name='Do you have kids?' ordinal='9' />
+                  <column datatype='string' name='State' ordinal='10' />
+                  <column datatype='string' name='County' ordinal='11' />
+                  <column datatype='string' name='City' ordinal='12' />
+                  <column datatype='string' name='Have you always lived in your current state?' ordinal='13' />
+                  <column datatype='string' name='If you&apos;ve moved, where from?' ordinal='14' />
+                  <column datatype='string' name='How did you find out about YF&amp;R?' ordinal='15' />
+                  <column datatype='string' name='YF&amp;R Discovery' ordinal='16' />
+                  <column datatype='string' name='Does your county have a YF&amp;R chapter?' ordinal='17' />
+                  <column datatype='string' name='How long have you been a YF&amp;R member?' ordinal='18' />
+                  <column datatype='string' name='YearsCount' ordinal='19' />
+                  <column datatype='string' name='Did you attend FFA or 4H?' ordinal='20' />
+                  <column datatype='string' name='How long were you in FFA or 4H?' ordinal='21' />
+                  <column datatype='string' name='4H_FFA_Years_Count' ordinal='22' />
+                  <column datatype='string' name='What area of the farming industry are you in?' ordinal='23' />
+                  <column datatype='string' name='Does your family farm?' ordinal='24' />
+                  <column datatype='string' name='If so, how many generations does farming go back in your family?' ordinal='25' />
+                  <column datatype='string' name='How long have you or your family been farming?' ordinal='26' />
+                  <column datatype='string' name='How did you or your family get started?' ordinal='27' />
+                  <column datatype='string' name='Do you or your family rent or own property?' ordinal='28' />
+                  <column datatype='string' name='How many acres do you own or rent? (If none, put N/A)' ordinal='29' />
+                  <column datatype='integer' name='What is your interest level in farming?' ordinal='30' />
+                  <column datatype='string' name='How do you market your goods?' ordinal='31' />
+                  <column datatype='string' name='Is farming your main occupation, or do you have another job?' ordinal='32' />
+                  <column datatype='string' name='If you have another job, do you work full time or part time?' ordinal='33' />
+                  <column datatype='string' name='Do you plan on working and farming, or would you like to be able to make farming a full time job?' ordinal='34' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='agcensus_2012 (t2_agcensus_2012)' inline='true' name='federated.051ubvp1uogri413cnps81a8qbdp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='t2_agcensus_2012' name='excel-direct.1whdqr4105pfc818lharu0s01hw4'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/katie/Desktop/data_projects/Future-of-Farming/data/agriculture census/combined/T2/t2_agcensus_2012.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1whdqr4105pfc818lharu0s01hw4' name='agcensus_2012' table='[agcensus_2012$]' type='table'>
+          <columns gridOrigin='A1:K2083:no:A1:K2083:0' header='yes' outcome='2'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='integer' name='state fips' ordinal='2' />
+            <column datatype='string' name='county' ordinal='3' />
+            <column datatype='string' name='abbreviation' ordinal='4' />
+            <column datatype='integer' name='county code' ordinal='5' />
+            <column datatype='string' name='commodity' ordinal='6' />
+            <column datatype='string' name='data item' ordinal='7' />
+            <column datatype='string' name='domain category' ordinal='8' />
+            <column datatype='string' name='value' ordinal='9' />
+            <column datatype='string' name='F11' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1whdqr4105pfc818lharu0s01hw4' name='agcensus_2012' table='[agcensus_2012$]' type='table'>
+          <columns gridOrigin='A1:K2083:no:A1:K2083:0' header='yes' outcome='2'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='integer' name='state fips' ordinal='2' />
+            <column datatype='string' name='county' ordinal='3' />
+            <column datatype='string' name='abbreviation' ordinal='4' />
+            <column datatype='integer' name='county code' ordinal='5' />
+            <column datatype='string' name='commodity' ordinal='6' />
+            <column datatype='string' name='data item' ordinal='7' />
+            <column datatype='string' name='domain category' ordinal='8' />
+            <column datatype='string' name='value' ordinal='9' />
+            <column datatype='string' name='F11' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K2083:no:A1:K2083:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state fips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state fips]</local-name>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias>state fips</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>abbreviation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[abbreviation]</local-name>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias>abbreviation</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[county code]</local-name>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias>county code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commodity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[commodity]</local-name>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias>commodity</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data item</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[data item]</local-name>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias>data item</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domain category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[domain category]</local-name>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias>domain category</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F11</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F11]</local-name>
+            <parent-name>[agcensus_2012]</parent-name>
+            <remote-alias>F11</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='agcensus_2012' datatype='table' name='[__tableau_internal_object_id__].[agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB]' role='measure' type='quantitative' />
+      <column caption='Abbreviation' datatype='string' name='[abbreviation]' role='dimension' type='nominal' />
+      <column caption='Commodity' datatype='string' name='[commodity]' role='dimension' type='nominal' />
+      <column caption='County Code' datatype='integer' name='[county code]' role='dimension' type='ordinal' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Data Item' datatype='string' name='[data item]' role='dimension' type='nominal' />
+      <column caption='Domain Category' datatype='string' name='[domain category]' role='dimension' type='nominal' />
+      <column caption='State Fips' datatype='integer' name='[state fips]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <drill-paths>
+        <drill-path name='state, county'>
+          <field>[state]</field>
+          <field>[county]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='agcensus_2012' id='agcensus!2012_9ED143CA5B264E68AA5D9686AFB26CFB'>
+            <properties context=''>
+              <relation connection='excel-direct.1whdqr4105pfc818lharu0s01hw4' name='agcensus_2012' table='[agcensus_2012$]' type='table'>
+                <columns gridOrigin='A1:K2083:no:A1:K2083:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='string' name='state' ordinal='1' />
+                  <column datatype='integer' name='state fips' ordinal='2' />
+                  <column datatype='string' name='county' ordinal='3' />
+                  <column datatype='string' name='abbreviation' ordinal='4' />
+                  <column datatype='integer' name='county code' ordinal='5' />
+                  <column datatype='string' name='commodity' ordinal='6' />
+                  <column datatype='string' name='data item' ordinal='7' />
+                  <column datatype='string' name='domain category' ordinal='8' />
+                  <column datatype='string' name='value' ordinal='9' />
+                  <column datatype='string' name='F11' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agcensus_2017' name='federated.1ddt75f1cltyb31ek2ykw0u4q6v2' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ddt75f1cltyb31ek2ykw0u4q6v2'>
+            <column-instance column='[value]' derivation='Count' name='[cnt:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Commodity' datatype='string' name='[commodity]' role='dimension' type='nominal' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[commodity]' derivation='None' name='[none:commodity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='integer' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:commodity:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([value])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:commodity:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:county:nk]' context='true'>
+            <groupfilter function='member' level='[none:county:nk]' member='&quot;CAMPBELL&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[yr:year:ok]'>
+            <groupfilter function='level-members' level='[yr:year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:commodity:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[cnt:value:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:county:nk]</column>
+            <column>[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:commodity:nk]</column>
+            <column>[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[yr:year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:commodity:nk]' value='135' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[sum:value:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[sum:value:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[sum:value:qk]' value='false' />
+            <format attr='omit-on-special' field='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[cnt:value:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[cnt:value:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[cnt:value:qk]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:county:nk]' />
+              <text column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[sum:value:qk]' />
+              <lod column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[sum:value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[cnt:value:qk]</rows>
+        <cols>[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:commodity:nk]</cols>
+      </table>
+      <simple-id uuid='{D95D109E-62B6-4AEE-8230-E45AC092CA45}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7FEFAE58-9438-4B06-B512-3D71194DAE5D}' />
+    </worksheet>
+    <worksheet name='T2_2017'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agcensus_2017' name='federated.1ddt75f1cltyb31ek2ykw0u4q6v2' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ddt75f1cltyb31ek2ykw0u4q6v2'>
+            <column caption='Abbreviation' datatype='string' name='[abbreviation]' role='dimension' type='nominal' />
+            <column caption='Commodity' datatype='string' name='[commodity]' role='dimension' type='nominal' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Data Item' datatype='string' name='[data item]' role='dimension' type='nominal' />
+            <column-instance column='[abbreviation]' derivation='None' name='[none:abbreviation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[commodity]' derivation='None' name='[none:commodity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[data item]' derivation='None' name='[none:data item:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='integer' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:commodity:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([commodity])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:commodity:nk]' member='&quot;CORN&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:data item:nk]'>
+            <groupfilter function='member' level='[none:data item:nk]' member='&quot;SALES, MEASURED IN $&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:commodity:nk]</column>
+            <column>[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:data item:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[Longitude (generated)]' field-type='quantitative' max='-9086884.8865780067' min='-9616974.6363639962' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[Latitude (generated)]' field-type='quantitative' max='4465568.1834557997' min='4101251.9553061714' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:county:nk]' />
+              <text column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:abbreviation:nk]' />
+              <text column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:county:nk]' />
+              <tooltip column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[sum:value:qk]' />
+              <lod column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:state:nk]' />
+              <lod column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:county:nk]' />
+              <lod column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[tyr:year:qk]' />
+              <geometry column='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[Latitude (generated)]</rows>
+        <cols>[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{D7EDCF36-A72A-4130-944C-545252323197}' />
+    </worksheet>
+    <worksheet name='YF&amp;R'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (YF&amp;R Questionnaire)' name='federated.0rfbx1q0rvsr741759brm0tdt3qb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0rfbx1q0rvsr741759brm0tdt3qb'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='Count' name='[cnt:State:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[Longitude (generated)]' field-type='quantitative' max='-7650375.833656651' min='-12909282.792728469' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[Latitude (generated)]' field-type='quantitative' max='6082837.4539460884' min='2793350.5924409218' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:State:nk]' />
+              <text column='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:State:qk]' />
+              <geometry column='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rfbx1q0rvsr741759brm0tdt3qb].[Latitude (generated)]</rows>
+        <cols>[federated.0rfbx1q0rvsr741759brm0tdt3qb].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{66F59690-80C4-4A3F-B587-44C73921CA4D}' />
+    </worksheet>
+    <worksheet name='YF&amp;R Gender'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (YF&amp;R Questionnaire)' name='federated.0rfbx1q0rvsr741759brm0tdt3qb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rfbx1q0rvsr741759brm0tdt3qb'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Gender]' derivation='Count' name='[cnt:Gender:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:Gender:nk]' value='421' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:Gender:nk]' />
+              <text column='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:Gender:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:Gender:qk]</rows>
+        <cols>[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:Gender:nk]</cols>
+      </table>
+      <simple-id uuid='{B4982F0E-09E7-4FED-82BE-E706D6D7EB07}' />
+    </worksheet>
+    <worksheet name='YF&amp;R_FFA_4H'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>FFA or 4H?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (YF&amp;R Questionnaire)' name='federated.0rfbx1q0rvsr741759brm0tdt3qb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rfbx1q0rvsr741759brm0tdt3qb'>
+            <column datatype='string' name='[Did you attend FFA or 4H?]' role='dimension' type='nominal' />
+            <column-instance column='[Did you attend FFA or 4H?]' derivation='Count' name='[cnt:Did you attend FFA or 4H?:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Did you attend FFA or 4H?]' derivation='None' name='[none:Did you attend FFA or 4H?:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:Did you attend FFA or 4H?:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:Did you attend FFA or 4H?:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:Did you attend FFA or 4H?:nk]' value='197' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:Did you attend FFA or 4H?:nk]' />
+              <text column='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:Did you attend FFA or 4H?:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:Did you attend FFA or 4H?:qk]</rows>
+        <cols>[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:Did you attend FFA or 4H?:nk]</cols>
+      </table>
+      <simple-id uuid='{AAFF40BC-3DA8-41A9-A10C-EE09425DA18F}' />
+    </worksheet>
+    <worksheet name='YF&amp;R_FFA_4H_Years'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Years in FFA and 4H</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (YF&amp;R Questionnaire)' name='federated.0rfbx1q0rvsr741759brm0tdt3qb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rfbx1q0rvsr741759brm0tdt3qb'>
+            <column datatype='string' name='[4H_FFA_Years_Count]' role='dimension' type='nominal' />
+            <column-instance column='[4H_FFA_Years_Count]' derivation='Count' name='[cnt:4H_FFA_Years_Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[4H_FFA_Years_Count]' derivation='None' name='[none:4H_FFA_Years_Count:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:4H_FFA_Years_Count:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:4H_FFA_Years_Count:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:4H_FFA_Years_Count:nk]' value='201' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:4H_FFA_Years_Count:nk]' value='Years in FFA and 4H' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:4H_FFA_Years_Count:nk]' />
+              <text column='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:4H_FFA_Years_Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:4H_FFA_Years_Count:qk]</rows>
+        <cols>[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:4H_FFA_Years_Count:nk]</cols>
+      </table>
+      <simple-id uuid='{9EA1DC6C-F53C-4B0F-B34C-8AC199223501}' />
+    </worksheet>
+    <worksheet name='YF&amp;R_Years'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (YF&amp;R Questionnaire)' name='federated.0rfbx1q0rvsr741759brm0tdt3qb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rfbx1q0rvsr741759brm0tdt3qb'>
+            <column datatype='string' name='[YearsCount]' role='dimension' type='nominal' />
+            <column-instance column='[YearsCount]' derivation='Count' name='[cnt:YearsCount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YearsCount]' derivation='None' name='[none:YearsCount:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:YearsCount:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:YearsCount:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:YearsCount:nk]' value='280' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:YearsCount:nk]' />
+              <text column='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:YearsCount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rfbx1q0rvsr741759brm0tdt3qb].[cnt:YearsCount:qk]</rows>
+        <cols>[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:YearsCount:nk]</cols>
+      </table>
+      <simple-id uuid='{625EF376-D54F-42B8-BBFF-53F07A15E16A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Future of Farming' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98340' id='1' param='vert' removable='false' w='98426' x='787' y='830'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4357' id='3' w='98426' x='787' y='830' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' w='98426' x='787' y='5187' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='83506' id='5' paired-zone-id='4' removable='false' w='98426' x='787' y='15664'>
+              <flipboard active-id='5' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Gender' captured-sheet='YF&amp;R Gender' id='2' />
+                  <story-point caption='YF&amp;R Member' captured-sheet='YF&amp;R_Years' id='3' />
+                  <story-point caption='4H_FFA' captured-sheet='YF&amp;R_FFA_4H' id='4' />
+                  <story-point caption='4H_FFA_Years' captured-sheet='YF&amp;R_FFA_4H_Years' id='5' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{966B9217-B8E4-4692-B799-47EA67D28335}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' name='T2_2017'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='36'>
+            <card type='columns' />
+          </strip>
+          <strip size='36'>
+            <card type='rows' />
+          </strip>
+          <strip size='36'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='224'>
+            <card mode='dropdown' param='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:commodity:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:county:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{E8154777-9C88-4E22-AB40-2B1D13CEDB63}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CA8333A8-7B4C-4B11-AD85-E35ECBAAE308}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='116'>
+            <card mode='radiolist' param='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[yr:year:ok]' type='filter' />
+            <card mode='radiolist' param='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:county:nk]' type='filter' values='cascading' />
+            <card pane-specification-id='0' param='[federated.1ddt75f1cltyb31ek2ykw0u4q6v2].[none:county:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{E3BC15D7-F32F-4AB6-BC49-FD8549518147}' />
+    </window>
+    <window class='worksheet' name='YF&amp;R'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:State:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{8D1DA559-DFC8-4185-ADC8-CE38E01970CE}' />
+    </window>
+    <window class='worksheet' name='YF&amp;R Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4E15DC26-297E-4C32-A3EE-693E73CC1F61}' />
+    </window>
+    <window class='worksheet' name='YF&amp;R_Years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:YearsCount:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{00E8BA9A-2574-4F9D-A6C5-92AB5723DF50}' />
+    </window>
+    <window class='worksheet' name='YF&amp;R_FFA_4H'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:Did you attend FFA or 4H?:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B795040A-A100-49EA-9438-FC56F0C40152}' />
+    </window>
+    <window class='worksheet' name='YF&amp;R_FFA_4H_Years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rfbx1q0rvsr741759brm0tdt3qb].[none:4H_FFA_Years_Count:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EC992805-77E7-46E1-955D-6B47AA34C8B9}' />
+    </window>
+    <window class='dashboard' name='Future of Farming'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{2F358E41-9D20-4630-8256-B378397D6D4B}' />
+    </window>
+  </windows>
+</workbook>
